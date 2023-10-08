@@ -27,3 +27,16 @@ body{
     text-decoration: none;
     color: black;
 }
+.section-login{
+    padding-inline: 10%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin: 10%;
+    background-color: rgba(10, 56, 57, 0.5);
+}
+.btn-form{
+    background-color: #9C4005;
+}
+.nav-login{
+    padding-left: 97%;
+}
