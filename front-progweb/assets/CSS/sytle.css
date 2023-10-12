@@ -1,9 +1,13 @@
-body{
+.body-home{
     padding: 0;
     margin: 0;
     background-image: url(../imgs/pexels-monstera-production-5635114.jpg);
     background-size: cover;
 
+}
+body{
+    padding: 0;
+    margin: 0;
 }
 .logo{
     background-color: black;
@@ -39,4 +43,12 @@ body{
 }
 .nav-login{
     padding-left: 97%;
+}
+.fc-daygrid-day-number{
+    text-decoration: none;
+    color: black;
+}
+.fc-col-header-cell-cushion{
+    text-decoration: none;
+    color: black;   
 }
