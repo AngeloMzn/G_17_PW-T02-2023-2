@@ -33,64 +33,82 @@
         </div>
     </nav>
     <div class="d-flex flex-row-reverse p-2">
-        <button type="button" class="btn  btn-novo-evento text-light">novo evento</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#eventoModal" class="btn  btn-novo-evento text-light">novo evento</button>
     </div>
     <div class="tabela-eventos">
         <table class="table ">
             <thead class="thead-dark">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">titulo</th>
-                <th scope="col">data</th>
-                <th scope="col">inicio</th>
-                <th scope="col">termino</th>
-                <th scope="col">localização</th>
-                <th scope="col">descrição</th>
-                <th scope="col">ação</th>
-              </tr>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">titulo</th>
+                    <th scope="col">data</th>
+                    <th scope="col">inicio</th>
+                    <th scope="col">termino</th>
+                    <th scope="col">localização</th>
+                    <th scope="col">descrição</th>
+                    <th scope="col">ação</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>exemplo1</td>
-                <td>exemplo1</td>
-                <td>exemplo1</td>
-                <td>exemplo1</td>
-                <td>exemplo1</td>   
-                <td>exemplo1</td>
-                <td>
-                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
-                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>exemplo2</td>
-                <td>exemplo2</td>
-                <td>exemplo2</td>
-                <td>exemplo1</td>
-                <td>exemplo1</td>
-                <td>exemplo1</td>
-                <td>
-                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
-                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                </td>
-             </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>exemplo3</td>
-                <td>exemplo3</td>
-                <td>exemplo3</td>
-                <td>exemplo1</td>
-                <td>exemplo1</td>
-                <td>exemplo1</td>
-                <td>
-                    <button type="button" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
-                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                </td>
-            </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>exemplo1</td>
+                    <td>exemplo1</td>
+                    <td>exemplo1</td>
+                    <td>exemplo1</td>
+                    <td>exemplo1</td>
+                    <td>exemplo1</td>
+                    <td>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#eventoModal" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>exemplo2</td>
+                    <td>exemplo2</td>
+                    <td>exemplo2</td>
+                    <td>exemplo1</td>
+                    <td>exemplo1</td>
+                    <td>exemplo1</td>
+                    <td>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#eventoModal" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>exemplo3</td>
+                    <td>exemplo3</td>
+                    <td>exemplo3</td>
+                    <td>exemplo1</td>
+                    <td>exemplo1</td>
+                    <td>exemplo1</td>
+                    <td>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#eventoModal" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
             </tbody>
-          </table>
+        </table>
+    </div>
+    <!-- Modal  Evento -->
+    <div class="modal fade" id="eventoModal" tabindex="-1" aria-labelledby="eventoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="eventoModalLabel">Evento</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
