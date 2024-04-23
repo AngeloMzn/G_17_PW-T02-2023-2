@@ -41,12 +41,11 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">titulo</th>
-                    <th scope="col">data</th>
                     <th scope="col">inicio</th>
                     <th scope="col">termino</th>
                     <th scope="col">localização</th>
                     <th scope="col">descrição</th>
-                    <th scope="col">ação</th>
+                    <th class="align-middle text-center" scope="col">ação</th>
                 </tr>
             </thead>
             <tbody>
@@ -57,8 +56,7 @@
                     <td>exemplo1</td>
                     <td>exemplo1</td>
                     <td>exemplo1</td>
-                    <td>exemplo1</td>
-                    <td>
+                    <td class="align-middle text-center">
                         <button type="button" data-bs-toggle="modal" data-bs-target="#eventoModal" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
                         <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
                     </td>
@@ -70,8 +68,7 @@
                     <td>exemplo2</td>
                     <td>exemplo1</td>
                     <td>exemplo1</td>
-                    <td>exemplo1</td>
-                    <td>
+                    <td class="align-middle text-center">
                         <button type="button" data-bs-toggle="modal" data-bs-target="#eventoModal" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
                         <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
                     </td>
@@ -83,8 +80,7 @@
                     <td>exemplo3</td>
                     <td>exemplo1</td>
                     <td>exemplo1</td>
-                    <td>exemplo1</td>
-                    <td>
+                    <td class="align-middle text-center">
                         <button type="button" data-bs-toggle="modal" data-bs-target="#eventoModal" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
                         <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
                     </td>
@@ -93,22 +89,41 @@
         </table>
     </div>
     <!-- Modal  Evento -->
+    
     <div class="modal fade" id="eventoModal" tabindex="-1" aria-labelledby="eventoModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="eventoModalLabel">Evento</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <form action="">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="eventoModalLabel">Evento</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                            <div class="mb-3">
+                                <label for="titulo_evento" class="form-label">Título:</label>
+                                <input type="text" class="form-control" id="titulo_evento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descricao_evento" class="form-label">Descrição:</label>
+                                <input type="text" class="form-control" id="descricao_evento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="data_inicio_evento" class="form-label">Data de inicio:</label>
+                                <input type="datetime-local" class="form-control" name="data_inicio_evento" id="data_inicio_evento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="data_fim_evento" class="form-label">Data de finalização:</label>
+                                <input type="datetime-local" class="form-control" name="data_fim_evento" id="data_fim_evento">
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Salvar</button>
-                </div>
-            </div>
-        </div>
+            </div> 
+        </form>
     </div>
 </body>
 
